@@ -9,16 +9,16 @@ module Google
 		module Reviews
 			class ReviewTest < Minitest::Test
 				def setup
-					@review = Google::Business::Reviews::Review.new({
-																																																						author_name: "John Doe",
-																																																						author_url: "https://authors.google.com/john-doe",
-																																																						language: "en",
-																																																						profile_photo_url: "https://authors.google.com/john-doe/avatar.jpg",
-																																																						rating: 5,
-																																																						relative_time_description: "1 day ago",
-																																																						text: "This gem is awesome!",
-																																																						time: 1630025951
-																																																					})
+					review = {}
+					review["author_name"] = "John Doe"
+					review["author_url"] = "https://authors.google.com/john-doe"
+					review["language"] = "en"
+					review["profile_photo_url"] = "https://authors.google.com/john-doe/avatar.jpg"
+					review["rating"] = 5
+					review["relative_time_description"] = "1 day ago"
+					review["text"] = "This gem is awesome!"
+					review["time"] = 1630025951
+					@review = Google::Business::Reviews::Review.new(review)
 				end
 
 				def test_author
