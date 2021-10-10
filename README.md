@@ -2,6 +2,8 @@
 
 Google Business Reviews ruby gem uses Google Places API to fetch review for a particular location by using place_id.
 
+[![Ruby](https://github.com/dhairyagabha/google-business-reviews/actions/workflows/main.yml/badge.svg)](https://github.com/dhairyagabha/google-business-reviews/actions/workflows/main.yml)
+
 ## Requirements
 
 ### Obtain Google API Key
