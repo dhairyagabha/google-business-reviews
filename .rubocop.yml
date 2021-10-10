@@ -1,13 +1,32 @@
+require: rubocop-rake
+
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.7
+  NewCops: enable
 
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/NumericLiterals:
+  Enabled: false
+
 Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/Documentation:
+  Enabled: false
+
+Layout/IndentationStyle:
+  EnforcedStyle: tabs
+
+Layout/IndentationWidth:
+  Width: 1
+
 Layout/LineLength:
-  Max: 120
+  Max: 150
+
+Metrics/AbcSize:
+  CountRepeatedAttributes: false
+  Max: 20
