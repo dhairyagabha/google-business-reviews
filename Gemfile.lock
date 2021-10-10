@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    google-business-reviews (0.1.0)
+    google-business-reviews (0.1.1)
 
 GEM
   remote: https://rubygems.org/
