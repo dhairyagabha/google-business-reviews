@@ -8,7 +8,7 @@ module Google
 		module Reviews
 			class VersionTest < Minitest::Test
 				def test_version
-					assert_equal Google::Business::Reviews::VERSION, "0.1.1"
+					assert_equal Google::Business::Reviews::VERSION, "0.1.2"
 				end
 			end
 		end
