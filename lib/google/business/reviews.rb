@@ -16,8 +16,8 @@ module Google
 
 			ENDPOINT = "https://maps.googleapis.com/maps/api/place/details/json"
 
-			def get_business_reviews(api_key, place_id)
-				url = URI("#{ENDPOINT}?key=#{api_key}&place_id=#{place_id}&fields=review")
+			def get_business_reviews(api_key, place_id, language = "en")
+				url = URI("#{ENDPOINT}?key=#{api_key}&place_id=#{place_id}&language=#{language}&fields=review")
 
 				https = Net::HTTP.new(url.host, url.port)
 				https.use_ssl = true
